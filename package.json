@@ -1,0 +1,16 @@
+{
+  "name": "streamvid",
+  "version": "0.0.1",
+  "description": "Webserver that will play videos or show images based on what you POST to it. Useful for streamers.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Megadrive <a.simeon@gmail.com> (http://megadriven.net/)",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.4.3",
+    "inert": "^4.2.0",
+    "jsonfile": "^3.0.0"
+  }
+}
