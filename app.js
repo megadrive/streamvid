@@ -4,7 +4,7 @@ const Hapi = require('hapi')
 const jsonfile = require('jsonfile')
 
 const server = new Hapi.Server()
-server.connection({port: 3000, host: 'localhost'})
+server.connection({port: 3000, host: '0.0.0.0'})
 
 let nextToSend = []
 let lastFired = {
