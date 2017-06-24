@@ -28,8 +28,30 @@ queue the video.
 this is just a proof of concept, it's possible ill continue developing for my own use. what i will definitely add is a
 `/skip` endpoint that will skip the current playing video to the next.
 
-another idea is another www/ page for mobiles to run. so that way all you need is a browser. just tap on a button, loaded from `media.json`,
-and wowee off it goes.
+another idea is another www/ page for mobiles to run. so that way all you need is a browser. just tap on a button, loaded from `media.json`, and wowee off it goes.
+
+other endpoints to be created will be `/stop`, `/play` to force the webm to play and not queue.
+
+modifying `media.json` to allow for non-fullscreen webms to have dimensions and positioning specified would be helpful. maybe maybe it look like this with only `{<key>: { <file>: "path/to/file" }}` being required. if `key.dimensions` or `key.position` are undefined, then place at 0,0 and make full screen (or not).
+```json
+{
+  "buck": {
+    "file": "media/big-buck-bunny_trailer.webm",
+    "dimensions": {"h": 640, "w": 480},
+    "position": {"x": 0, "y": 0}
+  },
+  "elephant": {
+    "file": "media/elephants-dream.webm",
+    "dimensions": {"h": 640, "w": 480},
+    "position": {"x": 0, "y": 0}
+  },
+  "dancer": {
+    "file": "media/dancer1.webm",
+    "dimensions": {"h": 640, "w": 480},
+    "position": {"x": 0, "y": 0}
+  }
+}
+```
 
 # purpose
 
